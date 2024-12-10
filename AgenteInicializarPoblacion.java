@@ -35,6 +35,7 @@ public class AgenteInicializarPoblacion extends Agent {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            myAgent.doDelete();
         }
 
         private ArrayList<Individuo> inicializarPoblacion(int tam) {

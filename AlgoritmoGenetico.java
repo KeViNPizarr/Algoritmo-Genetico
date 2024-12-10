@@ -154,12 +154,13 @@ public class AlgoritmoGenetico extends Agent {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
+                
             } else if(msg != null) {
                 System.out.println("Mensaje no reconocido. ID de conversación: " + msg.getConversationId());
             } else {
                 block();
             }        
-          
+          myAgent.doDelete();
         }
     }
 

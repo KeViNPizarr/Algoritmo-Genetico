@@ -44,11 +44,13 @@ public class AgentePredicciones extends Agent {
            }catch (UnreadableException e){
              e.printStackTrace();
            }
+           
             }else if (msg != null) {
                 System.out.println("Mensaje no reconocido. ID de conversación: " + msg.getConversationId());
             } else {
                 block(); // Bloquear hasta recibir un mensaje
             }
+            myAgent.doDelete();
         }
     }
 }
