@@ -13,7 +13,7 @@ public class AgentePredicciones extends Agent {
         doWait(5000);
         System.out.println(getLocalName() + " iniciado. ");
 
-        // Agregar comportamiento para recibir mensajes y realizar predicciones
+        // Agregar comportamiento para realizar predicciones
         addBehaviour(new Predicciones());
     }
 

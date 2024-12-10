@@ -25,7 +25,6 @@ public class AlgoritmoGenetico extends Agent {
         addBehaviour(new CalcularAlgoritmoGenetico());
     }
 
-    // Clase Data para representar el dataset
 
     private double[] resolverAlgoritmoGenetico(Data data, ArrayList<Individuo> poblacion) {
         int tamPoblacion = poblacion.size();

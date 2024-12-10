@@ -24,9 +24,9 @@ public class AgenteInicializarPoblacion extends Agent {
             int tamPoblacion = 200;
             ArrayList<Individuo> poblacion = inicializarPoblacion(tamPoblacion);
 
-            // Enviar información de la población (simulado aquí)
+            // Enviar poblacion 
             ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
-            msg.addReceiver(new AID("Algoritmo Genetico", AID.ISLOCALNAME)); // Nombre del agente receptor
+            msg.addReceiver(new AID("Algoritmo Genetico", AID.ISLOCALNAME)); 
             msg.setConversationId("poblacion-inicial"); 
             try {
                 msg.setContentObject(poblacion);

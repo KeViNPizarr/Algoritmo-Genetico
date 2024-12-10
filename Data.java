@@ -9,7 +9,7 @@ public class Data implements Serializable {
     public double[] y;
 
     public Data() {
-        this.x = new double[]{1,2,3,4,5,6,7,8,9};//advertising
-        this.y = new double[]{2,4,6,8,10,12,14,16,18};//sales
+        this.x = new double[]{1,2,3,4,5,6,7,8,9};//Advertising
+        this.y = new double[]{2,4,6,8,10,12,14,16,18};//Sales
     }
 }
