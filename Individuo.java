@@ -8,7 +8,7 @@ public class Individuo implements Serializable {
     
     private double beta0;
     private double beta1;
-    private double aptitud; // se calculará después
+    private double aptitud; 
 
     public Individuo(double beta0, double beta1) {
         this.beta0 = beta0;
@@ -27,6 +27,7 @@ public class Individuo implements Serializable {
         return aptitud;
     }
 
+    //Calculamos r^2
     public void evaluarAptitud(Data data) {
         double sumaY = 0;
         for (double valorY : data.y) {
@@ -47,7 +48,8 @@ public class Individuo implements Serializable {
             this.aptitud = 0; 
         }
     }
-
+    
+    
     public void mutar(Random rand) {
         beta0 += rand.nextGaussian();
         beta1 += rand.nextGaussian();
